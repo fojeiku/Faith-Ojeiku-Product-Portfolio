@@ -82,7 +82,7 @@ function CaseStudyDesignDev() {
           {/* Flow Diagram */}
           <div className="bg-white rounded-lg shadow-xl overflow-hidden mb-8">
             <img
-              src="/Brand%20Assets/Design%20folder/User%20Flow%20Diagram.png"
+              src="Brand%20Assets/Design%20folder/User%20Flow%20Diagram.png"
               alt="CDL Checkout BNPL User Flow"
               className="w-full h-auto"
             />
@@ -112,7 +112,7 @@ function CaseStudyDesignDev() {
             {/* BVN + OTP Validation */}
             <div className="bg-white rounded-lg shadow-xl overflow-hidden">
               <img
-                src="/Brand%20Assets/Design%20folder/BVN%20Validation%20&%20OTP%20verification.png"
+                src="Brand%20Assets/Design%20folder/BVN%20Validation%20&%20OTP%20verification.png"
                 alt="BVN + OTP Validation Screen"
                 className="w-full h-auto"
               />
@@ -125,7 +125,7 @@ function CaseStudyDesignDev() {
             {/* Loan Calculator / Offer */}
             <div className="bg-white rounded-lg shadow-xl overflow-hidden">
               <img
-                src="/Brand%20Assets/Design%20folder/Calculator%20or%20Loan%20Summary.png"
+                src="Brand%20Assets/Design%20folder/Calculator%20or%20Loan%20Summary.png"
                 alt="Loan Calculator / Offer Screen"
                 className="w-full h-auto"
               />
