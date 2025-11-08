@@ -142,7 +142,7 @@ function CaseStudyBusinessFinancials() {
 
           <div className="bg-white rounded-lg shadow-xl overflow-hidden">
             <img
-              src="Brand%20Assets/Financial%20folder/Business%20Model%20Canvas.png"
+              src="/Brand%20Assets/Financial%20folder/Business%20Model%20Canvas.png"
               alt="CDL Checkout Business Model Canvas"
               className="w-full h-auto"
             />
