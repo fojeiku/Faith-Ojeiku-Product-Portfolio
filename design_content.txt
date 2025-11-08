@@ -1,0 +1,156 @@
+[Sub Pages within Case study Page 
+Sub page 3]
+PAGE 5: DESIGN DEVELOPMENT (this message is not to be included in website output, it is a sub page in case study page)
+Header: Design Development  
+Sub Header: “From Requirements to Experience
+This phase was about turning clarity into emotion, translating functional specs into experiences that felt effortless and trustworthy. Working side-by-side with design, I focused on removing friction, simplifying language, and creating interfaces that built confidence. Each design decision was validated with data: form abandonment dropped 40 %, approval time fell to 45 seconds, and NPS rose 18 points. The goal was simple, make finance feel human.
+ARTIFACT 3.1: USER FLOW DIAGRAM
+Intro Statement
+To design for speed and confidence, we mapped the entire BNPL journey from checkout to approval, identifying every potential hesitation point. The flow ensured users could complete applications without uploads, with transparent decision steps and fallback paths for declines.
+AI Prompt for "User Flow Diagram" (1920 × 1080)
+Prompt: Create a horizontal user-flow diagram for CDL Checkout (BNPL).
+Flow: Customer → Select “Pay with CDL Checkout” → Enter Phone + BVN → BVN Verification → Bank Data Retrieval (API) → Credit Scoring → Decision (<3 min) → Approved/Declined → Terms Review → Accept → Purchase Complete → Payment Schedule Sent.
+Add small declined branch: Error → Alternative Options.
+Style: Rounded boxes, subtle shadows, icons (shopping cart, mobile, credit score), fintech palette (#0D1B2A blue + #F4D58D beige).
+Caption: “End-to-end checkout flow ensuring speed and clarity.”
+
+Output Goal: horizontal flow graphic, 1920×1080.
+[Customer at Checkout]
+        ↓
+[Selects "Pay with CDL Checkout"]
+        ↓
+[Enters: Phone + BVN]
+        ↓
+[BVN Verification] ← NIBSS API
+        ↓
+    [Success?]
+    ↙         ↘
+[NO]          [YES]
+  ↓             ↓
+[Error]    [Upload Bank Statement]
+           ↓
+      [Submit Application]
+           ↓
+      [Credit Scoring Engine]
+           ↓
+      [Decision in <2 mins]
+        ↙         ↘
+  [Approved]    [Declined]
+      ↓             ↓
+  [Review Terms] [Reason + Alt Options]
+      ↓
+  [Accept Terms]
+      ↓
+  [Complete Purchase]
+      ↓
+  [Payment Schedule Sent]
+
+
+
+Option 1 ARTIFACT 3.2: 
+WIREFRAMES & MOCKUPS
+Intro Statement
+I worked closely with UX designers to translate the user flow into tangible interfaces. We focused on creating a transparent and guided experience, from the initial loan calculator that set clear expectations, to the streamlined application form. The designs prioritized clarity and trust at every step.
+(Actual Images to Use Instead of AI Generation)
+Use WhatsApp Image 2025-10-31 at 21.54.51.jpeg (Loan Calculator): Demonstrates transparent pricing and payment breakdown.
+Use WhatsApp Image 2025-10-31 at 21.54.54.jpeg (Account Details Screen): Shows the streamlined, guided form with helpful cues like "Forgot? dial *565*0#".
+Use WhatsApp Image 2025-10-31 at 20.19.35.jpeg (OTP Verification): Highlights the security and verification flows built into the experience.
+
+Option 2 ARTIFACT 3.2
+WIREFRAMES & MOCKUPS
+Intro Statement
+We began with low-fidelity wireframes to test hierarchy and trust cues, then evolved them into responsive mockups.
+Every screen — from checkout to payment dashboard — was designed to answer one question: “Do users feel safe proceeding?”
+AI Prompt (1920 × 1080)
+Prompt: Generate a 4-panel wireframe + mockup board for CDL Checkout:
+1️ Checkout Screen – payment options + “Pay with CDL Checkout,” trust badges, 4-installment calculator.
+2️ Application Form – progress indicator (1 of 3), BVN + Phone fields, auto-fill tooltips, secure SSL banner.
+3️ Approval Screen – “Approved!” header, credit limit, payment schedule, CTA “Accept & Continue.”
+4️ Payment Dashboard – balance summary, next due date, “Pay Early” option, support link.
+Use clean grid layout; CDL colors; add device mockups (mobile + desktop).
+Caption: “From frictionless form to celebratory approval — building trust at every step.”
+
+
+ARTIFACT 3.3
+DESIGN ITERATIONS
+
+
+Intro Statement
+We approached design as an evolving system, not a one-time launch. Each version was treated as a hypothesis to validate through user testing and behavioral analytics. By analyzing drop-offs and in-app events, we uncovered friction points and designed targeted experiments that directly improved conversion and trust.
+
+Example 1
+BVN Field Confusion
+Hypothesis: Users were abandoning the form because they didn’t understand what “BVN” meant or how to retrieve it.
+Experiment 1: Added an inline tooltip explaining “BVN = Bank Verification Number. Dial 5650# to retrieve yours.” → 15 % abandonment drop.
+Experiment 2: Introduced a contextual “What’s my BVN?” button with USSD codes for all major banks. → Additional 25 % reduction in form drop-offs.
+
+Example 2
+Bank Statement Retrieval Friction
+Hypothesis: Users were dropping off during the bank statement retrieval step due to limited bank coverage and unclear guidance within the flow.
+Experiment 1
+Initial integration with our first data aggregation vendor (MBS) supported only select Tier 1 banks, creating exclusion for users whose banks weren’t available.
+Action: We onboarded a secondary provider, Mono, expanding API coverage across Tier 1 and Tier 2 banks.
+Result: Retrieval-related drop-offs decreased from ≈55 % to under 10 %, improving overall application completion rates and data verification reliability.
+Experiment 2
+User feedback revealed uncertainty about why the app required access to bank data and how it would be used.
+Action: We optimized in-flow microcopy and added contextual tooltips clarifying the purpose (“Used securely to verify income and affordability”) and emphasizing bank-grade encryption via trusted APIs.
+Result: Improved user confidence and smoother conversion through the data permission step, contributing to faster end-to-end approvals.
+
+AI Prompt (1920 × 1080)
+Prompt: Create a data-driven design iteration board for CDL Checkout (BNPL).
+Two horizontal rows:
+Row 1: BVN Field Confusion → Tooltip & Inline Help → 40 % total abandonment reduction.
+Row 2: Bank Statement Retrieval → API Coverage Expansion (MBS + Mono) + UX Copy Optimization → Drop-offs ↓ 55 % → <10 %.
+Use metrics as visual callouts with upward/downward trend icons.
+Fintech aesthetic: deep blue background (#0D1B2A), beige cards (#F4D58D), white text, and clear UX arrows showing iteration flow.
+Caption: “Data-informed iteration cycle: expanding API coverage and optimizing UX for accessibility and trust.”
+Output: 1920×1080 landscape case study board.
+
+Closing Caption for ARTIFACT 3.3 — DESIGN ITERATIONS
+Expanding API coverage and clarifying in-flow messaging transformed user confidence—reducing retrieval drop-offs from 55 % to under 10 % and boosting overall completion rates.
+
+Option 1 ARTIFACT 3.4
+HIGH-LEVEL DESIGN CONCEPTS & PLATFORM STRATEGY
+Intro Statement
+Looking beyond the MVP, I defined the product vision for a comprehensive ecosystem. This included evolving the consumer mobile experience and building a powerful, self-serve Merchant Portal to empower our partners and create a scalable two-sided platform.
+Merchant Portal Concept
+I defined the PRD for the merchant portal, focusing on objectives like Enhanced Visibility, Real-Time Tracking, and Settlement Management. The portal provided a dashboard for transaction analytics, performance insights, and customer onboarding tools, turning our merchant partners into active advocates.
+(Actual Document to Reference)
+Use Merchant Portal Update.docx: This document serves as a perfect artifact of your product management work, showing your ability to think strategically about a B2B user base and define feature sets that drive business value.
+
+Option 2 
+ARTIFACT 3.4
+HIGH-LEVEL DESIGN CONCEPTS
+Intro Statement
+As adoption grew, we explored future-state concepts, visualizing how customers and merchants could manage credit in one cohesive ecosystem. These high-level designs served as north-stars for future releases.
+Mobile App Concept
+Personalized home screen with credit limit, quick actions (“Shop Now,” “Make Payment”), gamified badges for on-time payments, and merchant offers.
+Merchant Portal Concept
+Transparent dashboard showing sales by BNPL usage, settlement status, and customer repayment health. Included self-serve onboarding and API docs for merchant developers.
+AI Prompt (1920 × 1080)
+Prompt: Create a split-screen concept showcase:
+Left: Mobile App Dashboard (mockup in phone frame).
+Right: Merchant Portal Web Dashboard with charts (Sales, Settlements, Performance).
+Include headers “Customer Experience” and “Merchant Experience.”
+CDL palette, clean fintech UI, flat icons.
+Caption: “Future-state concepts enabling credit management for both sides of the ecosystem.”
+
+
+ARTIFACT 3.5
+BEFORE & AFTER DESIGN COMPARISON
+Intro Statement
+To illustrate our evolution, we compared the original loan-application form with the redesigned flow.
+The shift from cluttered, technical screens to a clear, guided journey directly improved user confidence and completion rates.
+AI Prompt (1920 × 1080)
+Prompt: Generate a Before vs After comparison slide for a fintech loan-application UX.
+Left = Before: crowded form (gray/red tones, small text).
+Right = After: 3-step flow, progress indicator, BVN autofill, large CTA “Submit Application,” trust badges.
+Overlay metrics: “-40 % Form Abandonment” and “+18 NPS Points.”
+CDL blue and beige accents, clean symmetry, case-study presentation style.
+Caption: “From complex to confident — designing simplicity that converts.”
+
+Closing Statement for Design Development Page
+The Design Development phase turned strategy into empathy.
+By listening to real users, testing every assumption, and measuring what mattered, we made finance feel simpler and more human. These design choices didn’t just improve metrics; they built trust.
+With a validated user experience in place, the next phase focused on scaling CDL Checkout’s adoption across merchants and users proving that great design is the most powerful growth strategy.
+
